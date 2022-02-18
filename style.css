@@ -1,0 +1,61 @@
+table{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+tr td{
+    background-color: gray;
+    border-radius: 20%;
+    width: 128px;
+    height: 128px;
+    min-width: 128px;
+    min-height: 128px;
+}
+
+.green{
+    background-color: green;
+}
+
+td:hover{
+    background-color: rgb(54, 54, 54);
+}
+
+.hidden{
+    opacity: 0;
+    display: block;
+    margin: auto;
+}
+
+.hidden2{
+    opacity: 0;
+    animation: fadeout 2s;
+}
+
+.show{
+    opacity: 1;
+    animation: fadein 2s;
+}
+
+.win{
+    opacity: 1;
+}
+
+.green:hover{
+    background-color: rgb(1, 187, 1);
+}
+
+@keyframes fadein {             /* Animation erstellen */
+    0% { opacity: 0; }          /* Bei 0% der Animation ( am start) ist opacity (sichtbarkeit) 0 */
+    100% { opacity: 1; }        /* Bei 100% der Animation ( am Ende) ist opacity (sichtbarkeit) 1 */
+}
+
+@keyframes fadeout {
+    0% { opacity:1; }
+    100% { opacity: 0; }
+}
+
+
+.center {
+    text-align: center;
+}
